@@ -21,3 +21,18 @@ int[] numbers = { 1, 2, 3, 4 };
 
     double average = GetAverage(numbers);
     Console.WriteLine(average);
+
+    static int MaxValue(int[] numbers)
+    {
+        int maxValue = Int32.MinValue;
+        
+        foreach (int i in numbers)
+        {
+            if (i > maxValue)
+            {
+                maxValue = i;   
+            }
+        }
+
+        return maxValue;
+    }
