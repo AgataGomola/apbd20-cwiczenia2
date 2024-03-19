@@ -7,14 +7,14 @@ Console.WriteLine("Modyfikacja 3");
 
 static double GetAverage(int[] numbers)
 {
-    double var = 0;
+    double val = 0;
 
     for (int i = 0; i < numbers.Length; i++)
     {
-        var += numbers[i];
+        val += numbers[i];
     }
 
-    return var / numbers.Length;
+    return val / numbers.Length;
 }
 
 int[] numbers = { 1, 2, 3, 4 };
